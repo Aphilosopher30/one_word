@@ -16,3 +16,14 @@ word list:
 <br>
 
 <%= "#{@word_list}" %>
+
+
+<br>
+<br>
+
+
+<%= form_with url: "/insert_url", method: :get do |form| %>
+  <%= form.label :word, "Enter ONE word one please:" %>
+  <%= form.text_field :word %>
+  <%= form.submit "Submit" %>
+<% end %>
