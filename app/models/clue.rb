@@ -1,0 +1,4 @@
+class Clue < ApplicationRecord
+
+  
+end
