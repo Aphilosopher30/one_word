@@ -21,8 +21,7 @@ word list:
 <br>
 <br>
 
-
-<%= form_with url: "/insert_url", method: :get do |form| %>
+<%= form_with url: "/clue", method: :post do |form| %>
   <%= form.label :word, "Enter ONE word one please:" %>
   <%= form.text_field :word %>
   <%= form.submit "Submit" %>
