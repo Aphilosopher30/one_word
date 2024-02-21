@@ -4,9 +4,6 @@ class WelcomeController < ApplicationController
       file = File.open(Rails.root.join('storage', 'words.txt'))
       @word_list =  file.read.split(",\n")
       @random_word = @word_list.sample
-      # binding.pry
-
-
     end
 
 end
