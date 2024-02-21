@@ -1,10 +1,9 @@
 class ClueController < ActionController::Base
   def create
-    # binding.pry
 
-    # params = {word: 'test'}
-
-    clue = Clue.new(params)
+    word = @_params[:word]
+    
+    clue = Clue.new({word: word})
     if clue.save
       "TEST"
     else
